@@ -214,6 +214,7 @@ body {
 .services .services-content .srv {
   display: flex;
   margin-bottom: 40px;
+  min-height: 224px;
 }
 @media (max-width: 767px) {
   .services .services-content .srv {
