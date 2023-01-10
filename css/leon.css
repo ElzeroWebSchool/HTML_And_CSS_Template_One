@@ -67,6 +67,11 @@ body {
     margin-top: -20px;
   }
 }
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #519190db;
+}
 /* End Components */
 /* Start Header */
 .header {
@@ -152,6 +157,13 @@ body {
   height: calc(100vh - 64px);
   position: relative;
 }
+/* .landing::before,
+.footer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #519190db;
+} */
 .landing .intro-text {
   position: absolute;
   left: 50%;
@@ -165,7 +177,7 @@ body {
   margin: 0;
   font-weight: bold;
   font-size: 50px;
-  color: var(--main-color);
+  color: whitesmoke;
 }
 .landing .intro-text p {
   font-size: 19px;
@@ -408,11 +420,16 @@ body {
 /* End Contact */
 /* Start Footer */
 .footer {
-  background-color: var(--secondary-color);
-  color: white;
+  background-image: url(../images/landing.jpg);
+  background-size: cover;
+  color: whitesmoke;
   padding: 30px 10px;
   text-align: center;
   font-size: 18px;
+  position: relative;
+}
+.footer__text {
+  position: relative;
 }
 .footer span {
   font-weight: bold;
