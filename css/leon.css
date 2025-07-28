@@ -1,4 +1,11 @@
+
+
+
+
+
+
 /* Start Variables */
+
 :root {
   --main-color: #10cab7;
   --secondary-color: #2c4755;
@@ -83,9 +90,9 @@ body {
 .header .links {
   position: relative;
 }
-.header .links:hover .icon span:nth-child(2) {
+/* .header .links:hover .icon span:nth-child(2) {
   width: 100%;
-}
+} */
 .header .links .icon {
   width: 30px;
   display: flex;
@@ -128,9 +135,9 @@ body {
   right: 5px;
   top: -20px;
 }
-.header .links:hover ul {
+/* .header .links:hover ul {
   display: block;
-}
+} */
 .header .links ul li a {
   display: block;
   padding: 15px;
@@ -419,3 +426,43 @@ body {
   color: var(--main-color);
 }
 /* End Footer */
+
+
+
+
+.links ul {
+  display: none; /* مخفي بشكل افتراضي */
+  background: #fff;
+  position: absolute;
+  top: 50px; /* حسب مكان الأيقونة عندك */
+  right: 20px;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.links ul.show {
+  display: block;
+}
+.header .icon span:nth-child(2).show {
+  width: 100%;
+} 
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none; /* مخفي في البداية */
+  transition: opacity 0.5s ease;
+  z-index: 999;
+}
+
+#backToTop:hover {
+  background-color: #555;
+}
